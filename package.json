@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "hn-client",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.11.0",
+    "eslint-config-react-app": "^3.0.6",
+    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "if-env": "^1.0.4",
+    "preact-cli": "^2.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "preact": "^8.4.2",
+    "preact-compat": "^3.18.4"
+  }
+}
